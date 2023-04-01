@@ -29,14 +29,15 @@ var star = "*";
   }
    //4 exersice
 let lengthNumber=prompt('Введіть довжину прямокутника');
-let widthNumber=prompt('Введіть ширину трикутника');
-let symbol ="*"
- for (let s = 0; s < lengthNumber; s++) {
- 	symbol++;
- 	 console.log(symbol);
- 	 for (let b = 0; i < widthNumber; b++) {
- 	 	symbol++;
+let widthNumber=prompt('Введіть ширину прямокутника');
+let symbol='';
+ for (let s = 0; s <= lengthNumber; s++) {
+
+ 	 for (let b = 0; b <= widthNumber; b++) {
+ 	 	symbol=symbol+'*';
  	 }
+     console.log(symbol);
+     console.log("");
  }
 
 
@@ -77,8 +78,14 @@ let symbol ="*"
   	default:
   		console.log("Цієї планети немаю у сонячній системі ");}
 
-    //7 exersice
+   //7 exersice
   let smileArray= [':)', '=)',':)', '=)',':)', '=)'];
-  console.log(smileArray);
-  smileArray.sort();
- console.log(smileArray.sort());
+ 
+for (let k =0 ; k < smileArray.lenghth ;k++){
+  if(smileArray[k]=== '=)'){
+    smileArray[k]= ' ;)';
+      
+  }
+
+}
+console.log(smileArray);
